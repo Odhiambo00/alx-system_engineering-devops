@@ -22,3 +22,4 @@ Display all the lines in the file /etc/passwd that do not contain the pattern â€
 21-reverse Write a script that reverse its input
 22-users_and_homes Write a script that displays all users and their home directories, sorted by users
 100-empty_casks finds all empty files and directories in the current directory and all sub-directories including hidden files and one file per name
+101-gifs lists all the files with a .gif extension in the current directory and all its sub-directories including hidden files, only regular files not directories, The names of the files should be displayed without their extensions
