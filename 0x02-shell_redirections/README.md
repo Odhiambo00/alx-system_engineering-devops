@@ -11,3 +11,4 @@ This directory contains scripts for 0x02-shell_redirections project
 9-duplicate_last_line  duplicates the last line of the file iacta
 11-directories counts the number of directories and sub-directories in the current directory including hidden ones. Only the current directory is not counted
 12-newest_files displays the 10 newest files in the current directory
+13-unique takes a list of words as input and prints only words that appear exactly once
