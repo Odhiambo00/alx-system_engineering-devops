@@ -24,3 +24,4 @@ Display all the lines in the file /etc/passwd that do not contain the pattern â€
 100-empty_casks finds all empty files and directories in the current directory and all sub-directories including hidden files and one file per name
 101-gifs lists all the files with a .gif extension in the current directory and all its sub-directories including hidden files, only regular files not directories, The names of the files should be displayed without their extensions
 102-acrostic
+103-the_biggest_fan
