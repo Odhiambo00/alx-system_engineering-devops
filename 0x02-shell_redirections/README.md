@@ -6,3 +6,4 @@ This directory contains scripts for 0x02-shell_redirections project
 4-lastlines Display the last 10 lines of /etc/passwd
 5-firstlines Display the first 10 lines of /etc/passwd
 6-third_line  displays the third line of the file iacta
+7-file
