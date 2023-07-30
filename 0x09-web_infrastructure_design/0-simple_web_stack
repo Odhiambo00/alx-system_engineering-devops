@@ -1,0 +1,33 @@
+https://github.com/Odhiambo00/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/images/task-0.drawio.png?raw=true
+
+1.#### What is a server?
+A server is a powerful computer or hardware system that stores data, runs applications, and provides services to other computers (clients) over a network. In this infrastructure, we will use one server to host the website.
+
+2.#### What is the role of the domain name?
+The domain name (e.g., foobar.com) acts as a human-readable address that users can use to access websites hosted on the internet. It provides a way to map IP addresses (such as 8.8.8.8) to meaningful and memorable names.
+
+3.#### What type of DNS record is www in www.foobar.com?
+The "www" in www.foobar.com is a subdomain, and it is typically represented by a "CNAME" DNS record that points to the main domain (foobar.com) or directly to the server's IP address.
+
+4.#### What is the role of the web server?
+The web server (e.g., Nginx) handles HTTP requests from users' web browsers and serves static content, such as HTML, CSS, and images, to the clients. It acts as an intermediary between users and the application server.
+
+5.#### What is the role of the application server?
+The application server hosts the dynamic web application code (e.g., Python, Ruby, Java) and processes requests from the web server. It generates dynamic content, interacts with databases, and handles complex application logic.
+
+6.#### What is the role of the database?
+The database (e.g., MySQL) stores and manages the website's data, such as user information, posts, or product details. The application server communicates with the database to read and write data.
+
+7.#### What is the server using to communicate with the computer of the user requesting the website?
+The server uses the HTTP protocol to communicate with the computer of the user requesting the website. The user's web browser sends an HTTP request to the server, and the server responds with the requested content.
+
+Issues with this Infrastructure:
+
+1.#### SPOF (Single Point of Failure):
+This infrastructure has a single server, which means it is vulnerable to a single point of failure. If the server experiences hardware failure or crashes, the website will become inaccessible.
+
+2.#### Downtime during Maintenance:
+During maintenance or software updates, the web server may need to be restarted, causing temporary downtime. This could result in users being unable to access the website for a brief period.
+
+3.#### Limited Scalability:
+Since there is only one server, this infrastructure may struggle to handle a large influx of incoming traffic. It cannot easily scale horizontally to accommodate increased demand, potentially leading to performance issues during traffic spikes.
