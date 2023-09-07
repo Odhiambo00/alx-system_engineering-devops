@@ -39,6 +39,7 @@ defaults
 listen lb
 	bind :80
 	bind :443 ssl crt /etc/letsencrypt/live/mezemelik.tech/combined.pem
+	http-request redirect code 301 scheme https unless { ssl_fc }
 	balance roundrobin
-	server 256034-web-01 3.84.161.154:80 check
+	server 256034-web-01 3.84.161.154 check
 	server 256034-web-02 54.164.167.123:80 check
